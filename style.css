@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'inter' sans-serif;
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#card {
+    height: 400px;
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 7px;
+    width: 900px;
+}
+
+#txt {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 420px;
+    padding: 50px;
+    padding-right: 80px;
+}
+
+#txt h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 33px;
+    margin: 0;
+    padding: 0;
+}
+
+#txt h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+#txt p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 90%;
+}
+
+#sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+    max-width: 310px;
+
+}
+
+.num-str {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    width: 50px;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+.num-str .str {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 100;
+}
+
+.num-str .num {
+    text-transform: none;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+    flex-direction: column;
+}
+
+#image {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background-image: url('images/image-header-desktop.jpg');
+    background-size: cover;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#imge {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.5;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+@media(900px > width > 768px) {
+    #card {
+        height: 350px;
+        width: 768px;
+    }
+
+    #txt {
+        height: auto;
+        padding: 30px;
+    }
+
+    #txt p {
+        margin-top: 20px;
+    }
+
+    #sub {
+        margin-top: 50px;
+    }
+
+    #image {
+        height: 350px;
+    }
+}
+
+@media(768px > width > 650px) {
+    #card {
+        height: 300px;
+        width: 650px;
+    }
+
+    #txt {
+        height: auto;
+        padding: 25px;
+    }
+
+    #txt p {
+        margin-top: 10px;
+    }
+
+    #txt h1 {
+        font-size: 24px;
+    }
+
+    #sub {
+        margin-top: 10px;
+        font-size: large;
+    }
+
+    #sub .num {
+        font-size: 20px;
+    }
+
+    #sun .num-str {
+        font-size: small;
+    }
+
+    #image {
+        height: 300px;
+    }
+}
+
+
+
+@media(max-width: 650px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #card {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 375px;
+        height: 770px;
+        margin-top: 100px;
+    }
+
+    #image {
+        width: 100%;
+        background-image: url('images/image-header-mobile.jpg');
+        background-size: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-bottom-right-radius: 0px;
+        height: 300px;
+    }
+
+    #txt {
+        width: 100%;
+        height: 470px;
+        text-align: center;
+        align-items: center;
+        padding: 0px 54px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #txt h1 {
+        margin-top: 50px;
+    }
+
+    #sub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+    }
+
+    .num-str {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
